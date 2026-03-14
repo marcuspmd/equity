@@ -186,25 +186,64 @@ async function main() {
     process.stdout.write(`[${results.length + errors.length + 1}/${PEOPLE.length}] ${person.wikiSearchName}... `);
 
     try {
-      const imageResult = await getWikipediaImageUrl(person.wikiSearchName);
+      // Try Wikipedia first
+      let imageResult = await getWikipediaImageUrl(person.wikiSearchName);
+
+      if (!imageResult) {
+        // Try Commons
+        async function getCommonsImageUrl(wikiSearchName) {
+          try {
+            const commonsUrl = `https://commons.wikimedia.org/w/api.php?action=query&titles=File:${encodeURIComponent(wikiSearchName)}&prop=imageinfo&iiprop=url&format=json`;
+            const res = await fetch(commonsUrl);
+            if (!res.ok) return null;
+            const data = await res.json();
+            const pages = data.query && data.query.pages;
+            if (!pages) return null;
+            const pageId = Object.keys(pages)[0];
+            if (pageId !== '-1' && pages[pageId].imageinfo) {
+              return { url: pages[pageId].imageinfo[0].url, source: 'commons' };
+            }
+          } catch (e) {
+            // ignore
+          }
+          return null;
+        }
+
+        imageResult = await getCommonsImageUrl(person.wikiSearchName);
+      }
+
+      if (!imageResult) {
+        // Try DuckDuckGo image JSON endpoint
+        async function getDuckDuckGoImageUrl(query) {
+          try {
+            const url = `https://duckduckgo.com/i.js?q=${encodeURIComponent(query)}`;
+            const res = await fetch(url, { headers: { 'Accept': 'application/json' } });
+            if (!res.ok) return null;
+            const data = await res.json();
+            if (Array.isArray(data.results) && data.results.length > 0) {
+              const first = data.results[0];
+              if (first && first.image) return { url: first.image, source: 'duckduckgo' };
+            }
+          } catch (e) {
+            // ignore
+          }
+          return null;
+        }
+
+        imageResult = await getDuckDuckGoImageUrl(person.wikiSearchName);
+      }
 
       if (imageResult) {
         const ext = getExtFromUrl(imageResult.url);
         const filename = `${person.id}.${ext}`;
         const destPath = path.join(IMAGES_DIR, filename);
         await downloadImage(imageResult.url, destPath);
-        results.push({ id: person.id, path: `/images/${filename}`, source: 'wikipedia' });
-        console.log(`✓ (wikipedia)`);
+        results.push({ id: person.id, path: `/images/${filename}`, source: imageResult.source || 'unknown' });
+        console.log(`✓ (${imageResult.source || 'source'})`);
       } else {
-        // Fallback: picsum based on name seed
-        const seed = person.wikiSearchName.replace(/\s+/g, '');
-        const fallbackUrl = `https://picsum.photos/seed/${seed}/800/800`;
-        const filename = `${person.id}.jpg`;
-        const destPath = path.join(IMAGES_DIR, filename);
-        await downloadImage(fallbackUrl, destPath);
-        results.push({ id: person.id, path: `/images/${filename}`, source: 'picsum' });
-        console.log(`⚠ (no wikipedia image, used picsum fallback)`);
-        errors.push({ id: person.id, name: person.wikiSearchName, reason: 'No Wikipedia image found' });
+        // No reliable image found — record for manual review
+        errors.push({ id: person.id, name: person.wikiSearchName, reason: 'No image found on Wikipedia/Commons/DuckDuckGo' });
+        console.log(`✗ (no image found)`);
       }
     } catch (err) {
       console.log(`✗ ERROR: ${err.message}`);

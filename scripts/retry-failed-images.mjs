@@ -136,15 +136,60 @@ async function main() {
         newEntries[person.id] = `/images/${filename}`;
         console.log('✓ (wikipedia)');
       } else {
-        // Fallback picsum
-        const seed = person.wikiSearchName.replace(/\s+/g, '');
-        const fallbackUrl = `https://picsum.photos/seed/${seed}/800/800`;
-        const filename = `${person.id}.jpg`;
-        const destPath = path.join(IMAGES_DIR, filename);
-        await downloadImageWithRetry(fallbackUrl, destPath);
-        newEntries[person.id] = `/images/${filename}`;
-        console.log('⚠ (no wikipedia image, used picsum)');
-        stillFailed.push({ id: person.id, name: person.wikiSearchName, reason: 'No Wikipedia image' });
+        // Try Commons then DuckDuckGo before giving up
+        async function getCommonsImageUrl(wikiSearchName) {
+          try {
+            const commonsUrl = `https://commons.wikimedia.org/w/api.php?action=query&titles=File:${encodeURIComponent(wikiSearchName)}&prop=imageinfo&iiprop=url&format=json`;
+            const res = await fetch(commonsUrl);
+            if (!res.ok) return null;
+            const data = await res.json();
+            const pages = data.query && data.query.pages;
+            if (!pages) return null;
+            const pageId = Object.keys(pages)[0];
+            if (pageId !== '-1' && pages[pageId].imageinfo) {
+              return pages[pageId].imageinfo[0].url;
+            }
+          } catch (e) {
+            // ignore
+          }
+          return null;
+        }
+
+        async function getDuckDuckGoImageUrl(query) {
+          try {
+            const url = `https://duckduckgo.com/i.js?q=${encodeURIComponent(query)}`;
+            const res = await fetch(url, { headers: { 'Accept': 'application/json' } });
+            if (!res.ok) return null;
+            const data = await res.json();
+            if (Array.isArray(data.results) && data.results.length > 0) {
+              const first = data.results[0];
+              if (first && first.image) return first.image;
+            }
+          } catch (e) {
+            // ignore
+          }
+          return null;
+        }
+
+        let fallbackImage = await getCommonsImageUrl(person.wikiSearchName);
+        let usedSource = null;
+        if (fallbackImage) usedSource = 'commons';
+        if (!fallbackImage) {
+          fallbackImage = await getDuckDuckGoImageUrl(person.wikiSearchName);
+          if (fallbackImage) usedSource = 'duckduckgo';
+        }
+
+        if (fallbackImage) {
+          const ext = getExtFromUrl(fallbackImage);
+          const filename = `${person.id}.${ext}`;
+          const destPath = path.join(IMAGES_DIR, filename);
+          await downloadImageWithRetry(fallbackImage, destPath);
+          newEntries[person.id] = `/images/${filename}`;
+          console.log(`⚠ (${usedSource})`);
+        } else {
+          console.log('✗ (no image found)');
+          stillFailed.push({ id: person.id, name: person.wikiSearchName, reason: 'No image found on Wikipedia/Commons/DuckDuckGo' });
+        }
       }
     } catch (err) {
       console.log(`✗ FAILED: ${err.message}`);
