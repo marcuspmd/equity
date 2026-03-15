@@ -39,6 +39,7 @@ export const imageAccessibilityMetadata: Record<
     title: "First Computer Programmer",
     ariaDescription:
       "Ada Lovelace (1815-1852) was an English mathematician who is recognized as the first computer programmer. She wrote the first algorithm intended to be processed by a machine and envisioned the potential for computers to go beyond pure calculation.",
+    incorrect: false,
     role: "Mathematician & Programmer",
   },
 
@@ -51,6 +52,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Queen of Science",
     ariaDescription:
       'Mary Somerville (1780-1872) was a Scottish scientist and writer who excelled in astronomy and mathematics. She was the first female member of the Royal Astronomical Society and the term "scientist" was likely coined to describe her work.',
+    incorrect: false,
     role: "Scientist & Polymath",
   },
 
@@ -63,6 +65,7 @@ export const imageAccessibilityMetadata: Record<
     title: "First Female Electrical Engineer",
     ariaDescription:
       "Edith Clarke (1883-1959) was an American electrical engineer and inventor. She was the first woman to work as an electrical engineer in the United States and invented the Clarke calculator for solving electrical transmission line problems.",
+    incorrect: true,
     role: "Electrical Engineer",
   },
 
@@ -75,6 +78,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Quantum Pioneer",
     ariaDescription:
       "Grete Hermann (1901-1984) was a German mathematician and philosopher whose work contributed to foundational computer science and quantum mechanics. She published early work on computer algebra and is known for her insights into the nature of quantum theory.",
+    incorrect: true,
     role: "Mathematician & Philosopher",
   },
 
@@ -87,6 +91,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Chaos Theory Pioneer",
     ariaDescription:
       "Mary Cartwright (1900-1998) was a British mathematician who laid the foundations for chaos theory. She was awarded the Sylvester Medal and worked on analyzing radar systems during World War II.",
+    incorrect: true,
     role: "Mathematician",
   },
 
@@ -99,6 +104,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Mother of Recursive Functions",
     ariaDescription:
       'Rózsa Péter (1905-1977) was a Hungarian mathematician and logician who pioneered recursive function theory. She also authored "Playing with Infinity," an influential book on recreational mathematics.',
+    incorrect: false,
     role: "Mathematician & Logician",
   },
 
@@ -111,6 +117,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Inventor of Frequency Hopping",
     ariaDescription:
       "Hedy Lamarr (1914-2000) was an Austrian-American actress and inventor best known for developing frequency-hopping spread spectrum technology, which laid the groundwork for modern Wi-Fi and Bluetooth communications.",
+    incorrect: false,
     role: "Actress & Inventor",
   },
 
@@ -123,6 +130,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Queen of Software",
     ariaDescription:
       "Grace Hopper (1906-1992) was an American computer scientist and U.S. Navy rear admiral. She invented the first compiler and was instrumental in developing COBOL, one of the first programming languages.",
+    incorrect: false,
     role: "Computer Scientist & Admiral",
   },
 
@@ -135,6 +143,7 @@ export const imageAccessibilityMetadata: Record<
     title: "First CS PhD",
     ariaDescription:
       "Mary Kenneth Keller (1913-1985) was an American mathematician and educator who became the first woman to earn a Ph.D. in Computer Science in the United States. She was instrumental in developing the BASIC programming language.",
+    incorrect: false,
     role: "Computer Scientist & Educator",
   },
 
@@ -147,6 +156,7 @@ export const imageAccessibilityMetadata: Record<
     title: "First Female Computer Scientist in Canada",
     ariaDescription:
       "Beatrice Worsley (1921-2004) was a Canadian computer scientist who was one of the first people to program early computers. She wrote the first program for the EDSAC computer and pioneered computing in Canada.",
+    incorrect: false,
     role: "Computer Scientist",
   },
 
@@ -159,6 +169,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Creator of Address Programming",
     ariaDescription:
       "Kateryna Yushchenko (1919-1994) was a Ukrainian computer scientist who created the Address programming language. She was the first woman in the USSR to become a Doctor of Physical and Mathematical Sciences.",
+    incorrect: false,
     role: "Computer Scientist",
   },
 
@@ -171,6 +182,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Biomedical Engineering Pioneer",
     ariaDescription:
       "Thelma Estrin (1924-2007) was an American computer scientist who pioneered the application of computers to medical research and biomedical engineering. She designed the WEIZAC computer and was elected to the National Academy of Engineering.",
+    incorrect: false,
     role: "Computer Scientist & Engineer",
   },
 
@@ -183,6 +195,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Space Age Mathematician",
     ariaDescription:
       "Evelyn Boyd Granville (1924-present) is one of the first African-American women to earn a Ph.D. in mathematics. She developed software for Project Mercury and contributed to the Apollo program.",
+    incorrect: false,
     role: "Mathematician & Software Developer",
   },
 
@@ -195,6 +208,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Language Translation Pioneer",
     ariaDescription:
       "Ida Rhodes (1900-1986) was an American mathematician who worked on early computer translation and programming. She designed the C-10 language for the UNIVAC I and pioneered machine translation of Russian.",
+    incorrect: false,
     role: "Mathematician & Programmer",
   },
 
@@ -207,6 +221,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Inventor of Assembly Language",
     ariaDescription:
       "Kathleen Booth (1922-present) is a British computer scientist and mathematician who wrote code for early computers and invented assembly language. She designed the ARC computer, one of the earliest computers built in the UK.",
+    incorrect: true,
     role: "Computer Scientist & Inventor",
   },
 
@@ -219,6 +234,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Early Programmer",
     ariaDescription:
       "Klára Dán von Neumann (1911-1963) was a Hungarian-American computer scientist who wrote code for the ENIAC computer. She pioneered weather prediction software and was influential in early computer programming.",
+    incorrect: true,
     role: "Programmer & Developer",
   },
 
@@ -231,6 +247,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Enigma Codebreaker",
     ariaDescription:
       "Joan Clarke (1917-1996) was an English cryptanalyst who worked at Bletchley Park during World War II, breaking the Enigma code. She was later appointed a Member of the Order of the British Empire for her contributions.",
+    incorrect: false,
     role: "Cryptanalyst",
   },
 
@@ -243,6 +260,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Bletchley Park Cryptanalyst",
     ariaDescription:
       "Margaret Rock was a British mathematician and codebreaker who worked at Bletchley Park during World War II. She was a key member of Dilly Knox's team, helping to decrypt the German Enigma cipher.",
+    incorrect: true,
     role: "Cryptanalyst & Mathematician",
   },
 
@@ -255,6 +273,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Italian Enigma Breaker",
     ariaDescription:
       "Mavis Batey (1921-2013) was a British codebreaker during World War II who broke the Italian naval Enigma code. Her work was crucial to the success of the Battle of Cape Matapan and other naval operations.",
+    incorrect: true,
     role: "Cryptanalyst",
   },
 
@@ -267,6 +286,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Colossus Operator",
     ariaDescription:
       "Dorothy Du Boisson was an operator of the Colossus computer at Bletchley Park during World War II. She helped decrypt Lorenz ciphers using what is considered the world's first programmable digital computer.",
+    incorrect: false,
     role: "Computer Operator",
   },
 
@@ -279,6 +299,7 @@ export const imageAccessibilityMetadata: Record<
     title: "ENIAC Pioneer",
     ariaDescription:
       "Jean Bartik (1924-2013) was an American computer programmer who was one of the original programmers of ENIAC, one of the first general-purpose electronic digital computers. She had to invent programming as she worked.",
+    incorrect: true,
     role: "Computer Programmer",
   },
 
@@ -291,6 +312,7 @@ export const imageAccessibilityMetadata: Record<
     title: "ENIAC & UNIVAC Pioneer",
     ariaDescription:
       "Betty Holberton (1917-2001) was an American computer programmer who was one of the original ENIAC programmers. She later worked on UNIVAC and contributed to early programming languages and computing standards.",
+    incorrect: false,
     role: "Computer Programmer",
   },
 
@@ -303,6 +325,7 @@ export const imageAccessibilityMetadata: Record<
     title: "ENIAC Programmer",
     ariaDescription:
       "Frances Spence (1921-2012) was an American computer programmer who was one of the first programmers of ENIAC. She developed fundamental programming techniques that became standard in early computing.",
+    incorrect: false,
     role: "Computer Programmer",
   },
 
@@ -315,6 +338,7 @@ export const imageAccessibilityMetadata: Record<
     title: "ENIAC Mathematician",
     ariaDescription:
       "Ruth Teitelbaum (1926-2008) was an American mathematician who was one of the original ENIAC programmers. She helped to program the first general-purpose electronic computer and later transitioned to teaching mathematics.",
+    incorrect: false,
     role: "Mathematician & Programmer",
   },
 
@@ -327,6 +351,7 @@ export const imageAccessibilityMetadata: Record<
     title: "ENIAC Programmer",
     ariaDescription:
       "Marlyn Meltzer (1922-2008) was an American computer programmer who programmed ENIAC. She was instrumental in demonstrating the capabilities of one of the world's first general-purpose computers.",
+    incorrect: false,
     role: "Computer Programmer",
   },
 
@@ -339,6 +364,7 @@ export const imageAccessibilityMetadata: Record<
     title: "ENIAC Programmer",
     ariaDescription:
       "Kathleen Antonelli (1921-2006) was an American computer programmer who was one of the first ENIAC operators and became programming director at Remington Rand, helping to create UNIVAC programming standards.",
+    incorrect: false,
     role: "Computer Programmer & Director",
   },
 
@@ -351,6 +377,7 @@ export const imageAccessibilityMetadata: Record<
     title: "EDVAC Programmer",
     ariaDescription:
       "Adele Goldstine (1920-1987) was an American mathematician who worked on EDVAC programming. She wrote the first comprehensive technical documentation on programming and was essential to early computer development.",
+    incorrect: true,
     role: "Mathematician & Programmer",
   },
 
@@ -363,6 +390,7 @@ export const imageAccessibilityMetadata: Record<
     title: "ENIAC Programmer",
     ariaDescription:
       "Gloria Gordon Bolotsky (1923-2013) was one of the original ENIAC programmers. She was part of the team of women who figured out how to program the world's first general-purpose electronic computer.",
+    incorrect: true,
     role: "Computer Programmer",
   },
 
@@ -375,6 +403,7 @@ export const imageAccessibilityMetadata: Record<
     title: "ENIAC Programmer",
     ariaDescription:
       "Ester Gerston was one of the ENIAC programmers who helped develop early programming methods. She contributed to the foundational techniques that became standard in computer science.",
+    incorrect: true,
     role: "Computer Programmer",
   },
 
@@ -387,6 +416,7 @@ export const imageAccessibilityMetadata: Record<
     title: "ENIAC Mathematician",
     ariaDescription:
       "Ruth Briggs (1923-unknown) was an American mathematician who was one of the original ENIAC operators and programmers, contributing to the early development of computing.",
+    incorrect: true,
     role: "Mathematician & Programmer",
   },
 
@@ -399,6 +429,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Naval Cryptanalyst",
     ariaDescription:
       "Agnes Meyer Driscoll (1889-1971) was an American cryptanalyst who worked on breaking naval codes during World War I and World War II. She was a pioneer in cryptanalysis and worked with some of the earliest computing machines for code breaking.",
+    incorrect: false,
     role: "Cryptanalyst",
   },
 
@@ -411,6 +442,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Enigma Code Breaker",
     ariaDescription:
       "Genevieve Grotjan Feinstein (1915-2015) was an American cryptanalyst who made critical contributions to breaking the Enigma cipher during World War II. Her insights were instrumental to cryptanalysis efforts.",
+    incorrect: false,
     role: "Cryptanalyst",
   },
 
@@ -423,6 +455,7 @@ export const imageAccessibilityMetadata: Record<
     title: "World War Codebreaker",
     ariaDescription:
       "Elizebeth Smith Friedman (1892-1980) was an American codebreaker who worked on breaking codes during World War I and World War II. She was a pioneering female cryptanalyst and security expert.",
+    incorrect: false,
     role: "Codebreaker & Cryptanalyst",
   },
 
@@ -435,6 +468,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Bletchley Park Cryptanalyst",
     ariaDescription:
       "Ann Mitchell was a British codebreaker who worked at Bletchley Park during World War II, contributing to the effort to break Enigma and other enemy codes.",
+    incorrect: true,
     role: "Cryptanalyst",
   },
 
@@ -447,6 +481,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Bletchley Park Operator",
     ariaDescription:
       "Sarah Baring was a British codebreaker and Bletchley Park operator who contributed to the crucial code-breaking efforts of World War II.",
+    incorrect: true,
     role: "Codebreaker",
   },
 
@@ -459,6 +494,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Bletchley Park Cryptanalyst",
     ariaDescription:
       "Jane Hughes (known as Jane Fawcett) was a British cryptanalyst who worked at Bletchley Park during World War II, contributing to cryptanalytic efforts.",
+    incorrect: true,
     role: "Cryptanalyst",
   },
 
@@ -471,6 +507,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Polish Resistance Spy",
     ariaDescription:
       "Krystyna Skarbek (1908-1952) was a Polish spy and intelligence operative who worked with British intelligence during World War II and contributed to resistance efforts.",
+    incorrect: true,
     role: "Spy & Intelligence Operative",
   },
 
@@ -483,6 +520,7 @@ export const imageAccessibilityMetadata: Record<
     title: "American Spy & Analyst",
     ariaDescription:
       "Virginia Hall (1906-1982) was an American spy and intelligence analyst who worked for the US government during World War II and the Cold War, becoming one of the first female officers in the CIA.",
+    incorrect: false,
     role: "Spy & Analyst",
   },
 
@@ -495,6 +533,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Bletchley Park Cryptanalyst",
     ariaDescription:
       "Aileen Clarke (1921-2023) was a British codebreaker who worked at Bletchley Park during World War II, contributing to the breaking of enemy codes.",
+    incorrect: true,
     role: "Cryptanalyst",
   },
 
@@ -507,6 +546,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Mathematics & Computing Pioneer",
     ariaDescription:
       "Mary Gray (1938-present) is an American mathematician and operations researcher who pioneered the use of mathematics and computers in solving real-world problems and advanced scientific computing.",
+    incorrect: true,
     role: "Mathematician & Researcher",
   },
 
@@ -519,6 +559,7 @@ export const imageAccessibilityMetadata: Record<
     title: "NASA Computing Supervisor",
     ariaDescription:
       'Dorothy Vaughan (1910-2008) was an African-American mathematician and computing supervisor at NASA. She was a key figure in the space program and is featured in the book and film "Hidden Figures."',
+    incorrect: false,
     role: "Mathematician & Computing Supervisor",
   },
 
@@ -531,6 +572,7 @@ export const imageAccessibilityMetadata: Record<
     title: "NASA Engineer",
     ariaDescription:
       'Mary Jackson (1921-2005) was an African-American mathematician and engineer at NASA who worked on the space program. She overcame significant barriers to become a respected engineer and is featured in "Hidden Figures."',
+    incorrect: true,
     role: "Mathematician & Engineer",
   },
 
@@ -543,6 +585,7 @@ export const imageAccessibilityMetadata: Record<
     title: "NASA Space Program Pioneer",
     ariaDescription:
       'Katherine Johnson (1918-2020) was an African-American mathematician whose precise calculations were critical to the success of U.S. spaceflights. She is featured in the book and film "Hidden Figures" and received the Presidential Medal of Freedom.',
+    incorrect: false,
     role: "Mathematician & Scientist",
   },
 
@@ -555,6 +598,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Apollo Software Director",
     ariaDescription:
       'Margaret Hamilton (1936-present) is an American systems engineer and software pioneer who directed the development of Apollo program software. She coined the term "software engineering" and received the Presidential Medal of Freedom.',
+    incorrect: true,
     role: "Systems Engineer & Software Pioneer",
   },
 
@@ -567,6 +611,7 @@ export const imageAccessibilityMetadata: Record<
     title: "NASA Aerospace Engineer",
     ariaDescription:
       "Christine Darden (1942-present) is an African-American aerospace engineer who worked at NASA on aeronautical research and sonic boom reduction, making significant contributions to aircraft design.",
+    incorrect: false,
     role: "Aerospace Engineer",
   },
 
@@ -579,6 +624,7 @@ export const imageAccessibilityMetadata: Record<
     title: "NASA Battery Research Pioneer",
     ariaDescription:
       "Annie Easley (1933-2011) was an African-American mathematician and computer programmer at NASA who worked on battery technology research and contributed significantly to the space program.",
+    incorrect: false,
     role: "Mathematician & Programmer",
   },
 
@@ -591,6 +637,7 @@ export const imageAccessibilityMetadata: Record<
     title: "NASA Trajectory Analysis Supervisor",
     ariaDescription:
       "Melba Roy Mouton (1929-2017) was an African-American mathematician who supervised trajectory analysis at NASA and contributed to the space program's success.",
+    incorrect: false,
     role: "Mathematician & Supervisor",
   },
 
@@ -603,6 +650,7 @@ export const imageAccessibilityMetadata: Record<
     title: "NASA 3D Imaging Pioneer",
     ariaDescription:
       "Valerie Thomas (1943-present) is an African-American inventor and engineer at NASA who pioneered 3D imaging technology. She invented the illusion transmitter, which led to modern 3D visualization technologies.",
+    incorrect: false,
     role: "Inventor & Engineer",
   },
 
@@ -615,6 +663,7 @@ export const imageAccessibilityMetadata: Record<
     title: "First American Woman in Space",
     ariaDescription:
       "Sally Ride (1951-2012) was an American astronaut and physicist who became the first American woman to fly in space. She was a strong advocate for science education and founded Sally Ride Science.",
+    incorrect: false,
     role: "Astronaut & Physicist",
   },
 
@@ -627,6 +676,7 @@ export const imageAccessibilityMetadata: Record<
     title: "African-American Astronaut",
     ariaDescription:
       "Mae Jemison (1956-present) is an African-American astronaut, physician, and space scientist who became the first African-American woman to travel in space. She is also an entrepreneur and advocate for science and technology education.",
+    incorrect: false,
     role: "Astronaut & Physician",
   },
 
@@ -639,6 +689,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Hispanic-American Astronaut",
     ariaDescription:
       "Ellen Ochoa (1958-present) is a Hispanic-American astronaut and optical physicist who became director of the Johnson Space Center. She logged more than 1,000 hours in space and is a prolific inventor.",
+    incorrect: false,
     role: "Astronaut & Physicist",
   },
 
@@ -651,6 +702,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Indian-American Astronaut",
     ariaDescription:
       "Kalpana Chawla (1962-2003) was an Indian-American astronaut and space shuttle commander. She tragically died in the Space Shuttle Columbia disaster but is remembered for her dedication to space exploration.",
+    incorrect: false,
     role: "Astronaut & Commander",
   },
 
@@ -663,6 +715,7 @@ export const imageAccessibilityMetadata: Record<
     title: "ISS Record-Setting Astronaut",
     ariaDescription:
       "Peggy Whitson (1960-present) is an American astronaut who holds the record for the most time spent in space and has served as commander of the International Space Station multiple times.",
+    incorrect: false,
     role: "Astronaut & Commander",
   },
 
@@ -675,6 +728,7 @@ export const imageAccessibilityMetadata: Record<
     title: "First Female Space Shuttle Commander",
     ariaDescription:
       "Eileen Collins (1956-present) is an American astronaut who became the first female space shuttle commander. She has logged more than 5,000 hours as a pilot and has completed multiple space missions.",
+    incorrect: false,
     role: "Astronaut & Pilot",
   },
 
@@ -687,6 +741,7 @@ export const imageAccessibilityMetadata: Record<
     title: "NASA Space Telescope Pioneer",
     ariaDescription:
       'Nancy Grace Roman (1925-2016) was an American astronomer and NASA executive who directed the Hubble Space Telescope program. She is known as the "Mother of the Hubble Space Telescope."',
+    incorrect: true,
     role: "Astronomer & Program Director",
   },
 
@@ -699,6 +754,7 @@ export const imageAccessibilityMetadata: Record<
     title: "NASA Apollo Launch Director",
     ariaDescription:
       "JoAnn Morgan (1940-present) is an American engineer who became the first female launch director in the History of NASA's Kennedy Space Center, leading Apollo and space shuttle missions.",
+    incorrect: true,
     role: "Engineer & Launch Director",
   },
 
@@ -711,6 +767,7 @@ export const imageAccessibilityMetadata: Record<
     title: "NASA Abort System Engineer",
     ariaDescription:
       "Poppy Northcutt (1942-present) is an American engineer who designed the abort control systems for the Apollo spacecraft. She was a key member of NASA's mission control center during the Apollo missions.",
+    incorrect: true,
     role: "Engineer & Mission Control Specialist",
   },
 
@@ -723,6 +780,7 @@ export const imageAccessibilityMetadata: Record<
     title: "NASA Mission Control Specialist",
     ariaDescription:
       "Judy Sullivan was an American control systems engineer who worked in NASA's mission control center, contributing to the success of space missions.",
+    incorrect: false,
     role: "Systems Engineer",
   },
 
@@ -735,6 +793,7 @@ export const imageAccessibilityMetadata: Record<
     title: "NASA Safety Expert",
     ariaDescription:
       "Eula Bingham (1929-present) is an American occupational health researcher who worked on safety issues for NASA and other organizations, contributing to worker health and space program safety.",
+    incorrect: false,
     role: "Health Researcher & Safety Expert",
   },
 
@@ -747,6 +806,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Astronaut Geologist",
     ariaDescription:
       "Dorothy Metcalf-Lindenburger is an American astronaut and geologist who became the first teacher to conduct lessons from space, promoting science education from orbit.",
+    incorrect: false,
     role: "Astronaut & Geologist",
   },
 
@@ -759,6 +819,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Word Processor Inventor",
     ariaDescription:
       "Evelyn Berezin (1925-2018) was an American computer scientist and inventor who created the first word processing system, revolutionizing how people write and work with documents.",
+    incorrect: true,
     role: "Computer Scientist & Inventor",
   },
 
@@ -771,6 +832,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Video Game Pioneer",
     ariaDescription:
       "Carol Shaw (1956-present) is an American computer programmer and video game designer who was one of the first female video game designers. She designed games for Atari and is a pioneer in gaming technology.",
+    incorrect: false,
     role: "Programmer & Game Designer",
   },
 
@@ -783,6 +845,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Smalltalk & GUI Pioneer",
     ariaDescription:
       "Adele Goldberg (1945-present) is an American computer scientist who was instrumental in developing Smalltalk and pioneering graphical user interfaces at Xerox Alto. She made fundamental contributions to object-oriented programming.",
+    incorrect: true,
     role: "Computer Scientist & Software Developer",
   },
 
@@ -795,6 +858,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Network Protocol Pioneer",
     ariaDescription:
       'Radia Perlman (1951-present) is an American computer scientist who invented the spanning tree protocol, which enables bridge networking. She is known as the "mother of the internet" and has made crucial contributions to network technology.',
+    incorrect: true,
     role: "Computer Scientist & Inventor",
   },
 
@@ -807,6 +871,7 @@ export const imageAccessibilityMetadata: Record<
     title: "VLSI Design Pioneer",
     ariaDescription:
       "Lynn Conway (1938-present) is an American computer scientist and pioneer in VLSI (very-large-scale integration) design. She revolutionized chip design and is also an advocate for transgender rights.",
+    incorrect: false,
     role: "Computer Scientist & Inventor",
   },
 
@@ -815,10 +880,11 @@ export const imageAccessibilityMetadata: Record<
     name: "Sophie Wilson",
     category: "Modern Innovators",
     altText:
-      "Portrait of Sophie Wilson, British computer scientist who designed the ARM processor instruction set fundamental to modern mobile computing",
+      "Portrait of Sophie Wilson, British trans woman and computer scientist who designed the ARM processor instruction set fundamental to modern mobile computing",
     title: "ARM Processor Designer",
     ariaDescription:
-      "Sophie Wilson (1957-present) is a British computer scientist who designed the ARM processor instruction set. Her work on ARM technology has been fundamental to modern mobile computing and IoT devices.",
+      "Sophie Wilson (1957-present) is a British trans woman and computer scientist who designed the ARM processor instruction set. Her work on ARM technology has been fundamental to modern mobile computing and IoT devices. She is one of the most prominent trans women in computing history.",
+    incorrect: false,
     role: "Computer Scientist & Designer",
   },
 
@@ -831,6 +897,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Video Game Designer",
     ariaDescription:
       "Roberta Williams (1953-present) is an American video game designer and co-founder of Sierra Entertainment. She pioneered adventure games and made significant contributions to the video game industry.",
+    incorrect: false,
     role: "Game Designer & Entrepreneur",
   },
 
@@ -843,6 +910,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Palm Computing Pioneer",
     ariaDescription:
       "Donna Dubinsky (1944-present) is an American entrepreneur who co-founded Palm Computing and led the development of the Palm Pilot, revolutionizing portable computing and personal digital assistants.",
+    incorrect: true,
     role: "Entrepreneur & Business Leader",
   },
 
@@ -855,6 +923,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Graphic Designer & Font Pioneer",
     ariaDescription:
       "Susan Kare (1954-present) is an American graphic designer who designed icons and fonts for Apple Macintosh and Windows. Her work on digital typography and interface design has influenced modern computing aesthetics.",
+    incorrect: false,
     role: "Graphic & Interface Designer",
   },
 
@@ -867,6 +936,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Early Internet Pioneer",
     ariaDescription:
       "Stacy Horn (1957-present) is an American entrepreneur who founded ECHO, one of the first online communities, in New York in 1989. She is a pioneer in early internet community building.",
+    incorrect: true,
     role: "Entrepreneur & Community Builder",
   },
 
@@ -879,6 +949,7 @@ export const imageAccessibilityMetadata: Record<
     title: "ARPANET Pioneer",
     ariaDescription:
       "Elizabeth Feinler (1931-present) is an American computer scientist who created and managed the ARPANET directory, making it easier for researchers to find each other on the early internet.",
+    incorrect: true,
     role: "Computer Scientist & Networker",
   },
 
@@ -891,6 +962,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Cisco Systems Co-founder",
     ariaDescription:
       "Sandy Lerner (1955-present) is an American entrepreneur who co-founded Cisco Systems. She was instrumental in developing router technology that became fundamental to modern internet infrastructure.",
+    incorrect: true,
     role: "Entrepreneur & Co-founder",
   },
 
@@ -903,6 +975,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Mozilla CEO & Open-Source Leader",
     ariaDescription:
       "Mitchell Baker (1969-present) is an American technologist and CEO of Mozilla. She has been instrumental in advancing open-source internet technology and advocating for web freedom and privacy.",
+    incorrect: false,
     role: "Technologist & Executive",
   },
 
@@ -915,6 +988,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Yahoo Co-founder & CEO",
     ariaDescription:
       "Marissa Mayer (1975-present) is an American computer scientist who was one of the first employees at Google and the CEO of Yahoo. She has been influential in tech industry leadership and product development.",
+    incorrect: false,
     role: "Computer Scientist & Executive",
   },
 
@@ -927,6 +1001,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Facebook Chief Operating Officer",
     ariaDescription:
       "Sheryl Sandberg (1969-present) is an American technology executive who serves as the Chief Operating Officer of Meta (Facebook). She is also an advocate for women in the workplace and business leadership.",
+    incorrect: false,
     role: "Technology Executive",
   },
 
@@ -939,6 +1014,7 @@ export const imageAccessibilityMetadata: Record<
     title: "YouTube CEO",
     ariaDescription:
       "Susan Wojcicki (1968-present) is an American technology executive who served as the CEO of YouTube. She has been instrumental in shaping video sharing technology and digital content platforms.",
+    incorrect: false,
     role: "Technology Executive",
   },
 
@@ -951,6 +1027,7 @@ export const imageAccessibilityMetadata: Record<
     title: "eBay CEO",
     ariaDescription:
       "Meg Whitman (1956-present) is an American business executive who was the CEO of eBay during its critical growth phase. She has been influential in e-commerce and technology leadership.",
+    incorrect: true,
     role: "Business Executive",
   },
 
@@ -963,6 +1040,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Oracle Co-President",
     ariaDescription:
       "Safra Catz (1966-present) is an Israeli-American technology executive who is co-president of Oracle. She has been instrumental in Oracle's growth and has been a pioneering female technology executive.",
+    incorrect: false,
     role: "Technology Executive",
   },
 
@@ -975,6 +1053,7 @@ export const imageAccessibilityMetadata: Record<
     title: "IBM CEO",
     ariaDescription:
       "Ginni Rometty (1957-present) is an American business leader who served as the CEO of IBM. She has been influential in guiding IBM through digital transformation and technology innovation.",
+    incorrect: false,
     role: "Business Leader & Executive",
   },
 
@@ -987,6 +1066,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Xerox CEO",
     ariaDescription:
       "Ursula Burns (1957-present) is an American engineer who became the first African-American female CEO of a Fortune 500 company as CEO of Xerox. She is a groundbreaking business leader.",
+    incorrect: false,
     role: "Engineer & Executive",
   },
 
@@ -999,6 +1079,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Facial Recognition Bias Researcher",
     ariaDescription:
       "Joy Buolamwini (1989-present) is a Ghanaian-American computer scientist and digital activist who researches algorithmic bias in facial recognition technology. She is founder of the Algorithmic Justice League.",
+    incorrect: true,
     role: "Computer Scientist & Activist",
   },
 
@@ -1011,6 +1092,7 @@ export const imageAccessibilityMetadata: Record<
     title: "AI Ethics Researcher",
     ariaDescription:
       "Timnit Gebru (1983-present) is an Ethiopian-American computer scientist who researches artificial intelligence bias and ethics. She is founder of the Distributed AI Research Institute and a leading voice in AI accountability.",
+    incorrect: false,
     role: "Computer Scientist & Researcher",
   },
 
@@ -1023,6 +1105,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Algorithms & Inequality Scholar",
     ariaDescription:
       'Safiya Noble (1983-present) is an American scholar who researches the intersection of race, gender, and technology. She is author of "Algorithms of Oppression" and advocates for algorithmic justice.',
+    incorrect: false,
     role: "Scholar & Author",
   },
 
@@ -1035,6 +1118,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Technology & Race Researcher",
     ariaDescription:
       'Ruha Benjamin (1978-present) is an American sociologist who researches race, inequality, and technology. She is author of "Race After Technology" and directs the Center on Inequality and Technology at Princeton University.',
+    incorrect: false,
     role: "Sociologist & Researcher",
   },
 
@@ -1047,6 +1131,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Algorithmic Accountability Advocate",
     ariaDescription:
       'Cathy O\'Neill (1984-present) is an American mathematician and author of "Weapons of Math Destruction." She is a leading voice in advocating for accountability in algorithmic systems and their impact on society.',
+    incorrect: false,
     role: "Mathematician & Advocate",
   },
 
@@ -1059,6 +1144,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Privacy & Discrimination Researcher",
     ariaDescription:
       "Latanya Sweeney (1966-present) is an American computer scientist who researches privacy, discrimination, and technology. She is recognized for her work on algorithmic fairness and data privacy.",
+    incorrect: false,
     role: "Computer Scientist & Researcher",
   },
 
@@ -1071,6 +1157,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Artificial Stupidity Researcher",
     ariaDescription:
       "Meredith Broussard (1974-present) is an American journalist and researcher who examines the limits of technology. She advocates for critical examination of AI and algorithmic systems in society.",
+    incorrect: false,
     role: "Journalist & Researcher",
   },
 
@@ -1083,6 +1170,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Surveillance Technology Scholar",
     ariaDescription:
       'Virginia Eubanks (1968-present) is an American scholar who researches surveillance technology and digital systems affecting low-income communities. She is author of "Automating Inequality."',
+    incorrect: false,
     role: "Scholar & Author",
   },
 
@@ -1095,6 +1183,7 @@ export const imageAccessibilityMetadata: Record<
     title: "AI & Power Researcher",
     ariaDescription:
       'Kate Crawford (1974-present) is an Australian-American researcher who studies artificial intelligence and its relationship to power and justice. She is author of "Atlas of AI" and co-founder of AI Now Institute.',
+    incorrect: false,
     role: "Researcher & Author",
   },
 
@@ -1107,6 +1196,7 @@ export const imageAccessibilityMetadata: Record<
     title: "AI Safety Researcher",
     ariaDescription:
       "Margaret Mitchell (1983-present) is an American computer scientist who researches AI safety and responsible AI development. She is co-founder of the DAIR (Distributed AI Research Institute) and advocates for ethical AI.",
+    incorrect: false,
     role: "Computer Scientist & Researcher",
   },
 
@@ -1119,6 +1209,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Social Media Algorithm Researcher",
     ariaDescription:
       "Rumman Chowdhury is a Bangladeshi-American technologist and researcher who studies social media algorithms and their societal impact. He is director of research operations at Twitter and advocates for algorithmic transparency.",
+    incorrect: false,
     role: "Technologist & Researcher",
   },
 
@@ -1131,6 +1222,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Algorithms & Inequality Scientist",
     ariaDescription:
       "Rediet Abebe (1990s-present) is an Ethiopian computer scientist who researches algorithms and their impact on inequality. She co-founded the Black in AI movement and is dedicated to increasing diversity in AI.",
+    incorrect: false,
     role: "Computer Scientist & Activist",
   },
 
@@ -1143,6 +1235,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Facial Recognition Bias Investigator",
     ariaDescription:
       "Deborah Raji is a Nigerian-American researcher who investigates bias in AI systems, particularly facial recognition technology. She has conducted significant research on AI bias in law enforcement and government systems.",
+    incorrect: false,
     role: "Researcher & Investigator",
   },
 
@@ -1151,10 +1244,11 @@ export const imageAccessibilityMetadata: Record<
     name: "Sasha Costanza-Chock",
     category: "Algorithmic Justice",
     altText:
-      "Portrait of Sasha Costanza-Chock, American technology and media justice researcher and author of Design Justice",
+      "Portrait of Sasha Costanza-Chock, trans nonbinary American technology and media justice researcher and author of Design Justice",
     title: "Technology Justice Advocate",
     ariaDescription:
-      'Sasha Costanza-Chock (1978-present) is an American technology and media justice researcher and organizer. They are author of "Design Justice" and advocate for participatory approaches to technology design.',
+      'Sasha Costanza-Chock (1978-present) is a trans nonbinary American technology and media justice researcher and organizer. They are author of "Design Justice" and advocate for participatory approaches to technology design centered on communities most impacted by tech systems.',
+    incorrect: false,
     role: "Researcher & Advocate",
   },
 
@@ -1167,6 +1261,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Social Technology Researcher",
     ariaDescription:
       "Mutale Nkonde is a Zambian social technology researcher who critiques facial recognition and surveillance technologies. She is founder of The Reckoning Institute, focusing on technology and social justice.",
+    incorrect: false,
     role: "Researcher & Founder",
   },
 
@@ -1179,6 +1274,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Surveillance Accountability Activist",
     ariaDescription:
       "Yeshimabeit Milner (1989-present) is an American technologist who founded Algorithmic Justice League to challenge algorithmic oppression. She is a leading voice in digital rights and surveillance accountability.",
+    incorrect: true,
     role: "Technologist & Activist",
   },
 
@@ -1191,6 +1287,7 @@ export const imageAccessibilityMetadata: Record<
     title: "AI Now Institute Co-founder",
     ariaDescription:
       "Sarah Myers West (1988-present) is an American researcher who co-founded the AI Now Institute. She researches the social implications of AI and advocates for ethical AI governance and accountability.",
+    incorrect: true,
     role: "Researcher & Co-founder",
   },
 
@@ -1203,6 +1300,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Algorithmic Fairness Researcher",
     ariaDescription:
       "Alex Hanna (1990s-present) is an American machine learning researcher focused on algorithmic fairness and the social implications of AI. They are director of research at the Distributed AI Research Institute.",
+    incorrect: false,
     role: "Machine Learning Researcher",
   },
 
@@ -1215,6 +1313,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Language Models Researcher",
     ariaDescription:
       'Emily M. Bender (1972-present) is an American computer scientist and linguist who researches the social implications of large language models. She is author of "Bender\'s Rule" on AI accountability.',
+    incorrect: false,
     role: "Computer Scientist & Linguist",
   },
 
@@ -1227,6 +1326,7 @@ export const imageAccessibilityMetadata: Record<
     title: "Differential Privacy Inventor",
     ariaDescription:
       "Cynthia Dwork (1958-present) is an American computer scientist who invented differential privacy, a fundamental tool for protecting individual privacy in data analysis and machine learning applications.",
+    incorrect: false,
     role: "Computer Scientist & Inventor",
   },
 };
@@ -1268,4 +1368,3 @@ export function getAccessibilityByCategory(): Record<
 export function getAllAccessibilityMetadata(): ImageAccessibilityData[] {
   return Object.values(imageAccessibilityMetadata);
 }
-
