@@ -1,5 +1,5 @@
 {
-  "name": "power_of_equirity",
+  "name": "power_of_equity",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,14 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "clean": "rm -rf dist",
-    "lint": "tsc --noEmit",
-    "images:download": "node scripts/download-images-duckduckgo.mjs",
-    "images:manage": "node scripts/manage-images.mjs",
-    "images:manage:force": "node scripts/manage-images.mjs --force",
-    "images:list": "node scripts/manage-images.mjs --list",
-    "images:validate": "node scripts/validate-images.mjs validate",
-    "images:stats": "node scripts/validate-images.mjs stats",
-    "images:check": "node scripts/validate-images.mjs all"
+    "lint": "tsc --noEmit"
   },
   "dependencies": {
     "@google/genai": "^1.29.0",

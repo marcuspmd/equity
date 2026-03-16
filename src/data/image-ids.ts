@@ -213,7 +213,9 @@ export const ALL_IMAGE_IDS_BY_CATEGORY = {
  * Get all image IDs as a flat array
  */
 export function getAllImageIds(): string[] {
-  return Object.values(ALL_IMAGE_IDS_BY_CATEGORY).flat();
+  return (
+    Object.values(ALL_IMAGE_IDS_BY_CATEGORY) as readonly (readonly string[])[]
+  ).flat();
 }
 
 /**
@@ -230,7 +232,7 @@ export function getImageCategory(
   id: string,
 ): keyof typeof ALL_IMAGE_IDS_BY_CATEGORY | null {
   for (const [category, ids] of Object.entries(ALL_IMAGE_IDS_BY_CATEGORY)) {
-    if (ids.includes(id as any)) {
+    if ((ids as readonly string[]).includes(id)) {
       return category as keyof typeof ALL_IMAGE_IDS_BY_CATEGORY;
     }
   }
@@ -243,7 +245,7 @@ export function getImageCategory(
 export function getIdsByCategory(
   category: keyof typeof ALL_IMAGE_IDS_BY_CATEGORY,
 ): string[] {
-  return ALL_IMAGE_IDS_BY_CATEGORY[category] as any;
+  return Array.from(ALL_IMAGE_IDS_BY_CATEGORY[category]);
 }
 
 /**
