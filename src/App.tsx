@@ -127,6 +127,7 @@ export default function App() {
   return (
     <div
       className="min-h-screen bg-black text-white overflow-hidden font-sans selection:bg-white/30"
+      style={{ touchAction: "none" }}
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
     >
@@ -144,7 +145,7 @@ export default function App() {
             animate={{ opacity: 1, y: 0 }}
             className="text-lg md:text-2xl font-light tracking-widest uppercase"
           >
-            Equity in Tech
+            Celebrating Unsung Heroes of Technology
           </motion.h1>
           <div className="text-white/50 text-xs md:text-sm font-mono flex gap-3 md:gap-4">
             <span className="hidden sm:inline">↑↓ Universe</span>

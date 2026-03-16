@@ -45,6 +45,10 @@ export const imageMap: Record<string, string> = {
   "virginia-hall": "/images/virginia-hall.jpg",
   "aileen-clarke": "/images/aileen-clarke.jpg",
   "mary-gray": "/images/mary-gray.jpg",
+  "alan-turing": "/images/alan-turing.jpg",
+
+  // Additional Cryptographers / Early Coders added
+  "danielle-bunten": "/images/danielle-bunten.jpg",
 
   // Space & Apollo
   "dorothy-vaughan": "/images/dorothy-vaughan.jpg",
@@ -70,6 +74,8 @@ export const imageMap: Record<string, string> = {
 
   // Modern Innovators
   "evelyn-berezin": "/images/evelyn-berezin.jpg",
+  "frances-allen": "/images/frances-allen.jpg",
+  "erna-schneider": "/images/erna-schneider.jpg",
   "carol-shaw": "/images/carol-shaw.jpg",
   "adele-goldberg": "/images/adele-goldberg.jpg",
   "radia-perlman": "/images/radia-perlman.jpg",
@@ -89,6 +95,7 @@ export const imageMap: Record<string, string> = {
   "safra-catz": "/images/safra-catz.jpg",
   "ginni-rometty": "/images/ginni-rometty.jpg",
   "ursula-burns": "/images/ursula-burns.jpg",
+  "audrey-tang": "/images/audrey-tang.webp",
 
   // Algorithmic Justice
   "joy-buolamwini": "/images/joy-buolamwini.jpg",
@@ -108,7 +115,6 @@ export const imageMap: Record<string, string> = {
   "mutale-nkonde": "/images/mutale-nkonde.jpg",
   "yeshimabeit-milner": "/images/yeshimabeit-milner.jpg",
   "sarah-myers-west": "/images/sarah-myers-west.jpg",
-  "alex-hanna": "/images/alex-hanna.jpg",
   "emily-m-bender": "/images/emily-m-bender.jpg",
   "cynthia-dwork": "/images/cynthia-dwork.jpg",
 
@@ -133,4 +139,8 @@ export const imageMap: Record<string, string> = {
   "ruthe-farmer": "/images/ruthe-farmer.png",
   "telle-whitney": "/images/telle-whitney.jpg",
   "maria-klawe": "/images/maria-klawe.jpg",
+  "barbara-liskov": "/images/barbara-liskov.jpg",
+  "angelica-ross": "/images/angelica-ross.jpg",
+  "sage-sharp": "/images/sage-sharp.jpg",
+  "brianna-wu": "/images/brianna-wu.jpg",
 };

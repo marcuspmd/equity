@@ -235,20 +235,6 @@ export const justiceData: TimelineNode[] = [
     ],
   },
   {
-    id: "alex-hanna",
-    name: "Alex Hanna",
-    wikiSearchName: "Alex Hanna",
-    year: 2021,
-    category: "Algorithmic Justice",
-    title: "Director of Research at DAIR",
-    description: "Sociologist and AI researcher.",
-    personality: "Critical, rigorous",
-    achievements: [
-      "Director of Research at DAIR Institute",
-      "Researches the origins of training data",
-    ],
-  },
-  {
     id: "emily-m-bender",
     name: "Emily M. Bender",
     wikiSearchName: "Emily M. Bender",
@@ -274,21 +260,6 @@ export const justiceData: TimelineNode[] = [
     achievements: [
       "Co-invented differential privacy",
       "Awarded the Gödel Prize",
-    ],
-  },
-  {
-    id: "os-keyes",
-    name: "Os Keyes",
-    wikiSearchName: "Os Keyes",
-    year: 2018,
-    category: "Algorithmic Justice",
-    title: "Counting the Countless",
-    description:
-      "Trans nonbinary researcher whose work exposes how data systems, AI, and biometric technology harm trans and marginalized communities.",
-    personality: "Critical, intersectional",
-    achievements: [
-      'Authored "Counting the Countless", a landmark paper on the harms of data collection on trans people',
-      "Exposes how facial recognition and automated gender classification systems endanger trans lives",
     ],
   },
 ];
