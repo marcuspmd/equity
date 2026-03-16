@@ -13,6 +13,7 @@
  */
 
 import React from "react";
+import { useImageUrl } from "@/hooks/useWikipediaImage";
 import {
   timelineData,
   getImageAccessibility,
@@ -88,7 +89,10 @@ export function TimelineWithAccessibility() {
                 onClick={() => setSelectedCategory(category)}
                 className={selectedCategory === category ? "active" : ""}
                 style={{
-                  borderColor: categoryColors[category as any],
+                  borderColor:
+                    categoryColors[
+                      category as unknown as keyof typeof categoryColors
+                    ],
                 }}
               >
                 {category}
@@ -177,7 +181,7 @@ function TimelineItem({
         <div className="item-image-wrapper">
           <figure>
             <img
-              src={`/images/${person.id}.jpg`}
+              src={useImageUrl(`/images/${person.id}.jpg`)}
               alt={accessibility.altText}
               title={accessibility.title}
               aria-describedby={`${person.id}-full-description`}
@@ -331,7 +335,7 @@ function PersonCompactCard({ person }: PersonCompactCardProps) {
     >
       <div className="card-image">
         <img
-          src={`/images/${person.id}.jpg`}
+          src={useImageUrl(`/images/${person.id}.jpg`)}
           alt={person.altText}
           title={person.title}
           loading="lazy"

@@ -145,7 +145,7 @@ export default function App() {
             animate={{ opacity: 1, y: 0 }}
             className="text-lg md:text-2xl font-light tracking-widest uppercase"
           >
-            Celebrating Unsung Heroes of Technology
+            Celebrating Invisible Heroes of Technology
           </motion.h1>
           <div className="text-white/50 text-xs md:text-sm font-mono flex gap-3 md:gap-4">
             <span className="hidden sm:inline">↑↓ Universe</span>

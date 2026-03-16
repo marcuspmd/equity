@@ -10,6 +10,7 @@ import {
   getAccessibilityByCategory,
   getAllAccessibilityMetadata,
 } from "@/data";
+import { useImageUrl } from "@/hooks/useWikipediaImage";
 
 /**
  * Example 1: Basic image with accessibility metadata
@@ -64,7 +65,7 @@ export function AccessibilityGallery() {
           >
             <h3>{metadata.name}</h3>
             <img
-              src={`/images/${metadata.id}.jpg`}
+              src={useImageUrl(`/images/${metadata.id}.jpg`)}
               alt={metadata.altText}
               title={metadata.title}
               aria-describedby={`${metadata.id}-desc`}
@@ -104,7 +105,7 @@ export function AccessibilityGalleryByCategory() {
                 <article>
                   <h4>{person.name}</h4>
                   <img
-                    src={`/images/${person.id}.jpg`}
+                    src={useImageUrl(`/images/${person.id}.jpg`)}
                     alt={person.altText}
                     title={person.title}
                     aria-describedby={`${person.id}-full-description`}
@@ -140,7 +141,7 @@ export function ImageCard({ imageId }: { imageId: string }) {
     >
       <div className="image-container">
         <img
-          src={`/images/${accessibility.id}.jpg`}
+          src={useImageUrl(`/images/${accessibility.id}.jpg`)}
           alt={accessibility.altText}
           title={accessibility.title}
           loading="lazy"
@@ -213,7 +214,7 @@ export function TimelineWithAccessibility() {
               >
                 <div className="image-wrapper">
                   <img
-                    src={`/images/cat/categories.md`}
+                    src={useImageUrl(`/images/cat/categories.md`)}
                     alt={person.altText}
                     title={person.title}
                     aria-describedby={`${person.id}-description`}
@@ -259,7 +260,7 @@ export function DetailView({ imageId }: { imageId: string }) {
 
       <div className="modal-content">
         <img
-          src={`/images/${accessibility.id}.jpg`}
+          src={useImageUrl(`/images/${accessibility.id}.jpg`)}
           alt={accessibility.altText}
           title={accessibility.title}
           aria-describedby={`${imageId}-full-desc`}

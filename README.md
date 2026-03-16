@@ -1,4 +1,4 @@
-# Equity: Celebrating Unsung Heroes of Technology
+# Equity: Celebrating Invisible Heroes of Technology
 
 > *A 2026 WeCoded Challenge Submission*
 >
@@ -120,7 +120,7 @@ This project embodies the spirit of the WeCoded Challenge by:
 
 ## Contributing
 
-We believe in collaborative storytelling. If you have a story of an unsung hero in tech, or would like to contribute improvements:
+We believe in collaborative storytelling. If you have a story of an invisible hero in tech, or would like to contribute improvements:
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/amazing-story`)
