@@ -60,19 +60,40 @@ cd equity
 npm install
 ```
 
-3. Set up your environment:
-   - Create a `.env.local` file in the root directory
-   - Add your Gemini API key:
-     ```
-     VITE_GEMINI_API_KEY=your_api_key_here
-     ```
-
-4. Start the development server:
+3. Start the development server:
 ```bash
 npm run dev
 ```
 
-5. Open your browser and navigate to the provided local URL
+4. Open your browser and navigate to the provided local URL
+
+## Building for Production
+
+### Local Build
+```bash
+npm run build
+```
+
+The built files will be in the `dist/` directory.
+
+### Automatic Deployment
+
+This project uses GitHub Actions to automatically build and deploy to GitHub Pages on every push to `main` or `master`.
+
+**Setup Instructions:**
+
+1. Enable GitHub Pages in your repository settings:
+   - Go to Settings → Pages
+   - Select "Deploy from a branch"
+   - Choose `gh-pages` branch as source
+
+2. The workflow will automatically:
+   - Run on every push to `main` or `master`
+   - Install dependencies
+   - Build the project
+   - Deploy to GitHub Pages
+
+Your site will be available at: `https://your-username.github.io/equity/`
 
 ## Why Accessibility Matters
 
